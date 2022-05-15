@@ -3,7 +3,7 @@
 library(tidyverse)
 library(janitor)
 
-# dataset reference = https://www.kaggle.com/datasets/purbar/advertising-data
+
 # setting path and reading data
 
 print(getwd())
@@ -78,24 +78,3 @@ p2 = ggplot(data_clean, aes(x = newspaper, y = sales)) +
 # combining them
 
 ggarrange(p1, p2, ncol = 2, labels = "AUTO")
-
-# Square
-# Error = 5.105
-# Multiple R-squared: 0.05213
-# Adjusted R-squared: 0.04251 
-# p-value = 0.005126 (means highly significant therefore result doesn't happened by luck)
-
-# Cube
-# Error = 5.045
-# Multiple R-squared: 0.07926
-# Adjusted R-squared: 0.06517 
-# p-value = 0.001019 (means highly significant therefore result doesn't happened by luck)
-
-
-
-
-
-
-
-
-
