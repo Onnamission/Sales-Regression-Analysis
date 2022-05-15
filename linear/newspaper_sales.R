@@ -3,7 +3,7 @@
 library(tidyverse)
 library(janitor)
 
-# dataset reference = https://www.kaggle.com/datasets/purbar/advertising-data
+
 # setting path and reading data
 
 print(getwd())
@@ -51,9 +51,3 @@ data_clean %>%
 model = lm(sales ~ newspaper, data = data_clean)
 
 summary(model)
-
-# If newspaper reading is increased, Sales will also increase.
-# Error = 5.092
-# Multiple R-squared: 0.05212
-# Adjusted R-squared: 0.04733 
-# p-value = 0.001148 (means highly significant therefore result doesn't happened by luck)
