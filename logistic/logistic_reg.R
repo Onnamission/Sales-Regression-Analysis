@@ -5,7 +5,7 @@ library(janitor)
 library(caTools)
 library(ggpubr)
 
-# dataset reference = https://archive.ics.uci.edu/ml/datasets/bank+marketing
+
 # setting path and reading data
 
 print(getwd())
