@@ -4,7 +4,7 @@ library(tidyverse)
 library(janitor)
 library(ggpubr)
 
-# dataset reference = https://www.kaggle.com/datasets/purbar/advertising-data
+
 # setting path and reading data
 
 print(getwd())
@@ -79,16 +79,3 @@ p2 = ggplot(data_clean, aes(x=tv, y=sales)) +
 # combining them
 
 ggarrange(p1, p2, ncol = 2, labels = "AUTO")
-
-
-# Square
-# Error = 3.237
-# Multiple R-squared: 0.619
-# Adjusted R-squared: 0.6152 
-# p-value < 2.2e-16 (means highly significant therefore result doesn't happened by luck)
-
-# Cube
-# Error = 3.232
-# Multiple R-squared: 0.622
-# Adjusted R-squared: 0.6162 
-# p-value < 2.2e-16 (means highly significant therefore result doesn't happened by luck)
