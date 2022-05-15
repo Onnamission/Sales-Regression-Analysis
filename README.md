@@ -170,6 +170,8 @@ For now, two variable that are balance and campaign were used as an independent 
 
 Accuracy = 0.881931 or 88.19%
 
+The S-shaped curve in the relation of balance with term deposit shows that if balance per year of a customer is higher, then there are more changes that they will subscribe to term deposit. The slope in the second graph shows the opposite.
+
 ## Support
 
 For support, find me 😂.
