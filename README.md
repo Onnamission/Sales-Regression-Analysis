@@ -84,11 +84,17 @@ TV is used as a independent variable and sales is used a dependent variable.
 
 ![tv_sales](results/tv_sales.png)
 
+For polynomail regression
+
+![tv_sales_p](results/tv_sales_p.png)
+
 The above result shows that as the tv watch increases, sales increases.
 
- - Multiple R-squared: 0.6119
- - Adjusted R-squared: 0.6099 
- - p-value < 2.2e-16 
+| Model             | Error        | Multi R-Square | Adj R-Square |   P-value    |
+| ----------------- | -------------| -------------|-------------| -------------|
+| Linear | 3.259 | 0.6119 | 0.6099 | < 2.2e-16 |
+| Square | 3.237 | 0.619 | 0.6152 | < 2.2e-16 |
+| Cubic | 3.232 | 0.622 | 0.6162 | < 2.2e-16 |
 
 As p-value is very close to 0, therefore, highly significant that result doesn't happened by luck.
 
@@ -98,11 +104,17 @@ Radio is used as a independent variable and sales is used a dependent variable.
 
 ![radio_sales](results/radio_sales.png)
 
+For polynomial regression
+
+![radio_sales_p](results/radio_sales_p.png)
+
 The above result shows that as the radio listening increases, sales increases.
 
- - Multiple R-squared: 0.332
- - Adjusted R-squared: 0.3287 
- - p-value < 2.2e-16 
+| Model             | Error        | Multi R-Square | Adj R-Square |   P-value    |
+| ----------------- | -------------| -------------|-------------| -------------|
+| Linear | 4.275 | 0.332 | 0.3287 | < 2.2e-16 |
+| Square | 4.285 | 0.3323 | 0.3256 | < 2.2e-16 |
+| Cubic | 4.291 | 0.3338 | 0.3236 | < 2.2e-16 |
 
 As p-value is very close to 0, therefore, means highly significant that result doesn't happened by luck.
 
@@ -112,11 +124,17 @@ Newspaper is used as a independent variable and sales is used a dependent variab
 
 ![newspaper_sales](results/newspaper_sales.png)
 
+For polynomial regression
+
+![newspaper_sales_p](results/newspaper_sales_p.png)
+
 The above result shows that as the newspaper reading increases, sales increases.
 
- - Multiple R-squared: 0.05212
- - Adjusted R-squared: 0.04733 
- - p-value = 0.001148 
+| Model             | Error        | Multi R-Square | Adj R-Square |   P-value    |
+| ----------------- | -------------| -------------|-------------| -------------|
+| Linear | 5.092 | 0.05212 | 0.04733 | 0.001148 |
+| Square | 5.105 | 0.05213 | 0.04251 | 0.005126 |
+| Cubic | 5.045 | 0.07926 | 0.06517 | 0.001019 |
 
 As p-value is very close to 0, therefore, means highly significant that result doesn't happened by luck but still more than the previous two cases.
 
@@ -138,7 +156,11 @@ For support, find me 😂.
 
 ## Authors
 
+- [@Onnamission](https://www.github.com/Onnamission)
+
 ## Acknowledgements
 
+ - [Dataset1](https://www.kaggle.com/datasets/purbar/advertising-data)
+ - [Dataset2](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
 
 
