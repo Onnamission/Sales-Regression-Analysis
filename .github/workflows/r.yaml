@@ -1,0 +1,33 @@
+name: salesregression
+on: [push]
+permissions:
+  contents: read
+jobs:
+  run:
+    runs-on: [ubuntu-latest]
+    container: docker://dvcorg/cml:latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup R
+        uses: r-lib/actions/setup-r@master
+        
+      - name: Setup dependencies
+        run: |
+          R -e 'system("sudo apt-get install libcurl4-openssl-dev")'
+          R -e 'system("sudo apt-get install libssl-dev")'
+          R -e 'system("sudo apt-get install libxml2-dev")'
+          R -e 'install.packages("renv")' 
+          R -e 'renv::restore()'
+          
+      - name: Sales Regression Analysis
+        env: 
+          repo_token: ${{ secrets.GITHUB_TOKEN }} 
+        run: |
+          R -e 'renv::run("linear/newspaper_sales.R")'
+          R -e 'renv::run("linear/radio_sales.R")'
+          R -e 'renv::run("linear/tv_sales.R")'
+          R -e 'renv::run("polynomial/newspaper_sales_p.R")'
+          R -e 'renv::run("polynomial/radio_sales_p.R")'
+          R -e 'renv::run("polynomial/tv_sales_p.R")'
+          R -e 'renv::run("logistic/logistic_reg.R")'
