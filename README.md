@@ -157,6 +157,10 @@ The above result shows that as the newspaper reading increases, sales increases.
 
 As p-value is very close to 0, therefore, means highly significant that result doesn't happened by luck but still more than the previous two cases.
 
+## Optimization
+
+The nth power for polynomial can go to infinity but that value should be selected which make the R-square more close to 1.
+
 ## Logistic Regression
 
 Logistic regression is a process of modeling the probability of a discrete outcome given an input variable. The most common logistic regression models a binary outcome; something that can take two values such as true/false, yes/no, and so on.
