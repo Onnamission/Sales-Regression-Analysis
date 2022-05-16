@@ -2,6 +2,7 @@
 
 ![Github Repo Release](https://img.shields.io/github/release-date/Onnamission/Sales-Regression-Analysis)
 ![Github Repo Build](https://img.shields.io/github/workflow/status/Onnamission/Sales-Regression-Analysis/salesregression)
+![Github Repo Checks](https://badgen.net/github/checks/Onnamission/Sales-Regression-Analysis/main)
 ![Github Repo Size](https://img.shields.io/github/repo-size/Onnamission/Sales-Regression-Analysis)
 ![Github Repo License](https://img.shields.io/github/license/Onnamission/Sales-Regression-Analysis)
 ![Github Repo Download](https://img.shields.io/github/downloads/Onnamission/Sales-Regression-Analysis/total)
@@ -16,7 +17,7 @@ Regression analysis of sales data from two different datasets.
 ## Download
 
 ```bash
-  git clone https://github.com/Onnamission/Space-Missions-Analysis.git
+  git clone https://github.com/Onnamission/Sales-Regression-Analysis.git
 ```
 
 ## About
